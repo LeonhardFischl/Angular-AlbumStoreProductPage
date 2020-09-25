@@ -13,10 +13,7 @@ private album: Album;
   constructor(private _http: Http) { }
 
   getAlbum(id: number): Observable<Album> {
-    return this._http.get(this._albumUrl).map((response) => {
-      this.album = <Album>response.json();
-      return this.album;
-    });
+    return this._http.get(this._albumUrl).map((response) => <Album>response.json());
   }
 
 }
