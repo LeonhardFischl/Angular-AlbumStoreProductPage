@@ -3,9 +3,9 @@
   "version": "0.0.2",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "ng": "ng.cmd",
+    "start": "ng.cmd serve",
+    "build": "ng.cmd build",
     "test": "./node_modules/.bin/mocha ./src/spec/mocha-specs --recursive --reporter spec",
     "test:part2": "./node_modules/.bin/mocha ./src/spec/mocha-specs/part2/ --recursive --reporter spec",
     "test:part3": "./node_modules/.bin/mocha ./src/spec/mocha-specs/part3/ --recursive --reporter spec",
@@ -22,9 +22,9 @@
     "tutor-test:part7": "./node_modules/.bin/mocha ./src/spec/mocha-specs/part7/ --recursive --reporter json & ng test --config tutor-karma.conf.js --single-run --part part7",
     "mocha-spec": "./node_modules/.bin/mocha ./src/spec/mocha-specs/ --reporter spec",
     "mocha-json": "./node_modules/.bin/mocha ./src/spec/mocha-specs/ --reporter json",
-    "karma-spec": "ng test --config tutor-karma.conf.js --single-run",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "karma-spec": "ng.cmd test --config tutor-karma.conf.js --single-run",
+    "lint": "ng.cmd lint",
+    "e2e": "ng.cmd e2e"
   },
   "private": true,
   "dependencies": {
